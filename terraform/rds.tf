@@ -108,7 +108,7 @@ resource "aws_db_instance" "infracost_rds_test" {
 
   tags = {
     Name        = "infracost-rds"
-    Environment = "dev"
+    Environment = "dev-env"
     Project     = "infracost-testing"
   }
 }
