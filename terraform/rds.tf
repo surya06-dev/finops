@@ -95,7 +95,7 @@ resource "aws_db_instance" "infracost_rds_test" {
   storage_type           = "gp2"
 
   username               = "admin"
-  password               = "MySQl25"
+  password               = "MySQl25#"
 
   db_subnet_group_name   = aws_db_subnet_group.rds_subnet_group.name
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
@@ -107,7 +107,7 @@ resource "aws_db_instance" "infracost_rds_test" {
   monitoring_interval     = 60
 
   tags = {
-    Name        = "infracost-rds-test"
+    Name        = "infracost-rds"
     Environment = "dev"
     Project     = "infracost-testing"
   }
