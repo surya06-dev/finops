@@ -108,7 +108,7 @@ resource "aws_db_instance" "infracost_rds_test" {
 
   tags = {
     Name        = "infracost-rds"
-    Environment = "dev-env"
-    Project     = "infracost"
+    Environment = "dev-env-finops"
+    Project     = "infracost-finops"
   }
 }
